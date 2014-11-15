@@ -37,7 +37,7 @@
         android:text="Eco Friendly Products"
         android:textStyle="bold|italic"
         android:textColor="@color/material_deep_teal_200"
-
+        android:onClick="sendProductsMessage"
         />
     <Button
         android:id="@+id/regulationsbtn"
@@ -47,7 +47,7 @@
         android:text="Environment Regulations"
         android:textStyle="bold|italic"
         android:textColor="@color/material_deep_teal_200"
-
+        android:onClick="sendActsMessage"
         />
     <Button
         android:id="@+id/articlesbtn"
@@ -57,7 +57,7 @@
         android:text="Nature Articles"
         android:textStyle="bold|italic"
         android:textColor="@color/material_deep_teal_200"
-
+        android:onClick="sendArticlesMessage"
         />
     <Button
         android:id="@+id/tipsbtn"
@@ -67,7 +67,7 @@
         android:text="Environmental Tips"
         android:textStyle="bold|italic"
         android:textColor="@color/material_deep_teal_200"
-
+        android:onClick="sendTipsMessage"
         />
 
 </RelativeLayout>

@@ -6,5 +6,9 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_eco_system">EcoSystem</string>
     <string name="title_activity_ngos">NGOs</string>
+    <string name="title_activity_acts">Acts</string>
+    <string name="title_activity_products">Products</string>
+    <string name="title_activity_articles">Articles</string>
+    <string name="title_activity_tips">Tips</string>
 
 </resources>

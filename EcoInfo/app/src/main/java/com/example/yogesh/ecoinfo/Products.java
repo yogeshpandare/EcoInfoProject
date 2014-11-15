@@ -1,7 +1,6 @@
 package com.example.yogesh.ecoinfo;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -15,12 +14,12 @@ import android.os.Build;
 
 
 
-public class MyActivity extends Activity {
+public class Products extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_my);
+        setContentView(R.layout.activity_products);
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
@@ -32,7 +31,7 @@ public class MyActivity extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.my, menu);
+        getMenuInflater().inflate(R.menu.products, menu);
         return true;
     }
 
@@ -59,45 +58,8 @@ public class MyActivity extends Activity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.fragment_my, container, false);
-
+            View rootView = inflater.inflate(R.layout.fragment_products, container, false);
             return rootView;
         }
-    }
-    public void sendEcoSystemMessage(View view)
-    {
-        System.out.println("First activity's button clicked");
-        Intent intent = new Intent(this, EcoSystem.class);
-        startActivity(intent);
-    }
-    public void sendNGOMessage(View view)
-    {
-        System.out.println("First activity's button clicked");
-        Intent intent = new Intent(this, NGOs.class);
-        startActivity(intent);
-    }
-    public void sendProductsMessage(View view)
-    {
-        System.out.println("First activity's button clicked");
-        Intent intent = new Intent(this, Products.class);
-        startActivity(intent);
-    }
-    public void sendActsMessage(View view)
-    {
-        System.out.println("First activity's button clicked");
-        Intent intent = new Intent(this, Acts.class);
-        startActivity(intent);
-    }
-    public void sendArticlesMessage(View view)
-    {
-        System.out.println("First activity's button clicked");
-        Intent intent = new Intent(this, Articles.class);
-        startActivity(intent);
-    }
-    public void sendTipsMessage(View view)
-    {
-        System.out.println("First activity's button clicked");
-        Intent intent = new Intent(this, Tips.class);
-        startActivity(intent);
     }
 }

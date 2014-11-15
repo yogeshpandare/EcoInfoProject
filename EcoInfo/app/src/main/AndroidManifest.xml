@@ -24,6 +24,22 @@
             android:name=".NGOs"
             android:label="@string/title_activity_ngos" >
         </activity>
+        <activity
+            android:name=".Acts"
+            android:label="@string/title_activity_acts" >
+        </activity>
+        <activity
+            android:name=".Products"
+            android:label="@string/title_activity_products" >
+        </activity>
+        <activity
+            android:name=".Articles"
+            android:label="@string/title_activity_articles" >
+        </activity>
+        <activity
+            android:name=".Tips"
+            android:label="@string/title_activity_tips" >
+        </activity>
     </application>
 
 </manifest>

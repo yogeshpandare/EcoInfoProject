@@ -9,12 +9,15 @@
     android:background="#336600"
     tools:context="com.example.yogesh.ecoinfo.Tips$PlaceholderFragment">
 
+
     <TextView
+        android:id="@+id/txt1"
         android:text="Tip1\nTip2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold|italic"
         android:textColor="@android:color/background_light"
         android:textSize="25sp"/>
+
 
 </RelativeLayout>

@@ -1,6 +1,9 @@
 package com.example.yogesh.ecoinfo;
 
 import android.app.Activity;
+import android.app.FragmentManager;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -11,7 +14,8 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
-
+import android.webkit.WebView;
+import android.widget.Button;
 
 
 public class Tips extends Activity {
@@ -20,6 +24,7 @@ public class Tips extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tips);
+
         if (savedInstanceState == null) {
             getFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
@@ -60,6 +65,8 @@ public class Tips extends Activity {
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_tips, container, false);
             return rootView;
+
         }
     }
+
 }

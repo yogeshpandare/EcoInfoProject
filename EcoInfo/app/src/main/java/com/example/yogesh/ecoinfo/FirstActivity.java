@@ -1,6 +1,5 @@
 package com.example.yogesh.ecoinfo;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
@@ -15,13 +14,13 @@ import android.os.Build;
 
 
 
-public class MyActivity extends Activity {
+public class FirstActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash);
-        Thread logoTimer = new Thread() {
+        setContentView(R.layout.activity_my);
+        /*Thread logoTimer = new Thread() {
             public void run(){
                 try{
                     int logoTimer = 0;
@@ -43,20 +42,19 @@ public class MyActivity extends Activity {
             }
         };
 
-        logoTimer.start();
+        logoTimer.start();*/
         if (savedInstanceState == null) {
-            getFragmentManager().beginTransaction()
+            getSupportFragmentManager().beginTransaction()
                     .add(R.id.container, new PlaceholderFragment())
                     .commit();
         }
-
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.my, menu);
+        getMenuInflater().inflate(R.menu.splash, menu);
         return true;
     }
 
@@ -75,7 +73,7 @@ public class MyActivity extends Activity {
     /**
      * A placeholder fragment containing a simple view.
      */
-    public static class PlaceholderFragment extends android.app.Fragment {
+    public static class PlaceholderFragment extends Fragment {
 
         public PlaceholderFragment() {
         }
@@ -83,17 +81,16 @@ public class MyActivity extends Activity {
         @Override
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.activity_splash, container, false);
-
+            View rootView = inflater.inflate(R.layout.fragment_my, container, false);
             return rootView;
         }
     }
-    protected void onDestroy() {
+    /*protected void onDestroy() {
 
         super.onDestroy();
 
-    }
-   /* public void sendEcoSystemMessage(View view)
+    }*/
+    public void sendEcoSystemMessage(View view)
     {
         System.out.println("First activity's button clicked");
         Intent intent = new Intent(this, EcoSystem.class);
@@ -128,7 +125,6 @@ public class MyActivity extends Activity {
         System.out.println("First activity's button clicked");
         Intent intent = new Intent(this, Tips.class);
         startActivity(intent);
-    }*/
-
+    }
 
 }

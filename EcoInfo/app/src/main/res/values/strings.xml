@@ -10,5 +10,6 @@
     <string name="title_activity_products">Products</string>
     <string name="title_activity_articles">Articles</string>
     <string name="title_activity_tips">Tips</string>
+    <string name="title_activity_splash">splash</string>
 
 </resources>

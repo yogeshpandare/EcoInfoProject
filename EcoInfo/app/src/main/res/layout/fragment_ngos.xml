@@ -10,10 +10,45 @@
     tools:context="com.example.yogesh.ecoinfo.NGOs$PlaceholderFragment">
 
     <TextView
-        android:text="WWF\nGreenPeace"
+    android:id="@+id/wwf"
+    android:text="WWF"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textColor="@android:color/background_light"
+    android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/greenpeace"
+        android:text="GreenPeace"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textColor="@android:color/background_light"
-        android:textSize="40sp"/>
+        android:textSize="30sp"
+        android:layout_below="@+id/wwf"/>
+    <TextView
+        android:id="@+id/chintan"
+        android:text="Chintan Group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:layout_below="@+id/greenpeace"/>
+    <TextView
+        android:id="@+id/ies"
+        android:text="Indian Environmental Society"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:layout_below="@+id/chintan"/>
+    <TextView
+        android:id="@+id/ecofriends"
+        android:text="EcoFriends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp"
+        android:layout_below="@+id/ies"/>
+
+
 
 </RelativeLayout>

@@ -14,8 +14,9 @@
         android:layout_height="wrap_content"
         android:text="Our Earth's Ecosystem"
         android:textStyle="bold|italic"
-        android:textColor="@color/material_deep_teal_200"
+        android:textColor="#FFCC00"
         android:onClick="sendEcoSystemMessage"
+
         />
 
     <Button
@@ -25,7 +26,7 @@
         android:layout_below="@+id/ecosystembtn"
         android:text="NGOs Serving Nature"
         android:textStyle="bold|italic"
-        android:textColor="@color/material_deep_teal_200"
+        android:textColor="#FFCC00"
         android:onClick="sendNGOMessage"
         />
 
@@ -36,7 +37,7 @@
         android:layout_below="@+id/ngobtn"
         android:text="Eco Friendly Products"
         android:textStyle="bold|italic"
-        android:textColor="@color/material_deep_teal_200"
+        android:textColor="#FFCC00"
         android:onClick="sendProductsMessage"
         />
     <Button
@@ -46,7 +47,7 @@
         android:layout_below="@+id/ecofriendlybtn"
         android:text="Environment Regulations"
         android:textStyle="bold|italic"
-        android:textColor="@color/material_deep_teal_200"
+        android:textColor="#FFCC00"
         android:onClick="sendActsMessage"
         />
     <Button
@@ -56,7 +57,7 @@
         android:layout_below="@+id/regulationsbtn"
         android:text="Nature Articles"
         android:textStyle="bold|italic"
-        android:textColor="@color/material_deep_teal_200"
+        android:textColor="#FFCC00"
         android:onClick="sendArticlesMessage"
         />
     <Button
@@ -66,7 +67,7 @@
         android:layout_below="@+id/articlesbtn"
         android:text="Environmental Tips"
         android:textStyle="bold|italic"
-        android:textColor="@color/material_deep_teal_200"
+        android:textColor="#FFCC00"
         android:onClick="sendTipsMessage"
         />
 

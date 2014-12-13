@@ -10,12 +10,14 @@ import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.Menu;
+import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 import android.webkit.WebView;
 import android.widget.Button;
+import android.widget.Toast;
 
 
 public class Tips extends Activity {
@@ -36,7 +38,10 @@ public class Tips extends Activity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.tips, menu);
+        //getMenuInflater().inflate(R.menu.tips, menu);
+        //return true;
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.tips, menu);
         return true;
     }
 
@@ -45,11 +50,25 @@ public class Tips extends Activity {
         // Handle action bar item clicks here. The action bar will
         // automatically handle clicks on the Home/Up button, so long
         // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+        switch (item.getItemId())
+        {
+
+            case R.id.tipsshare:
+                //Toast.makeText(MyActivity.this, "Share with your friends", Toast.LENGTH_SHORT).show();
+                Intent shareIntent = new Intent(Intent.ACTION_SEND);
+                shareIntent.setType("text/plain");
+                shareIntent.putExtra(Intent.EXTRA_SUBJECT, "Tips");
+                shareIntent.putExtra(Intent.EXTRA_TEXT, "Environmental Tips");
+                startActivity(Intent.createChooser(shareIntent, "Share the tips"));
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+      /*  int id = item.getItemId();
         if (id == R.id.action_settings) {
             return true;
         }
-        return super.onOptionsItemSelected(item);
+        return super.onOptionsItemSelected(item); */
     }
 
     /**

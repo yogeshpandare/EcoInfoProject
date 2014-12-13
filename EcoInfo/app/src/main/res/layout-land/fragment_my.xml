@@ -1,0 +1,78 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:background="#4CAF50"
+        tools:context=".MyActivity$PlaceholderFragment"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/ecosystembtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Our Earth's Ecosystem"
+            android:textStyle="bold"
+            android:onClick="sendEcoSystemMessage"
+
+            />
+
+        <Button
+            android:id="@+id/ngobtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ecosystembtn"
+            android:text="NGOs Serving Nature"
+            android:textStyle="bold"
+            android:onClick="sendNGOMessage"
+            />
+
+        <Button
+            android:id="@+id/ecofriendlybtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ngobtn"
+            android:text="Eco Friendly Products"
+            android:textStyle="bold"
+            android:onClick="sendProductsMessage"
+            />
+        <Button
+            android:id="@+id/regulationsbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ecofriendlybtn"
+            android:text="Environment Regulations"
+            android:textStyle="bold"
+            android:onClick="sendActsMessage"
+            />
+        <Button
+            android:id="@+id/articlesbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/regulationsbtn"
+            android:text="Nature Articles"
+            android:textStyle="bold"
+            android:onClick="sendArticlesMessage"
+            />
+        <Button
+            android:id="@+id/tipsbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/articlesbtn"
+            android:text="Environmental Tips"
+            android:textStyle="bold"
+            android:onClick="sendTipsMessage"
+            />
+
+    </RelativeLayout>
+
+
+</ScrollView>
+

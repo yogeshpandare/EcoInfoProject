@@ -10,7 +10,7 @@
         android:paddingRight="16dp"
         android:paddingTop="16dp"
         android:paddingBottom="16dp"
-        android:background="#009999"
+        android:background="#0099CC"
         tools:context="com.example.yogesh.ecoinfo.EcoSystem$PlaceholderFragment">
 
         <WebView

@@ -1,3 +1,6 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -6,18 +9,42 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="#2196F3"
+    android:background="#0099CC"
     tools:context="com.example.yogesh.ecoinfo.Tips$PlaceholderFragment">
-
 
     <TextView
         android:id="@+id/txt1"
-        android:text="Tip1\nTip2"
+        android:text="\t                                   GARDEN
+                      \n2.Simplify: Simplify your life as much as possible. Only keep belongings that you use/enjoy on a regular basis. By making the effort to reduce what you own, you will naturally purchase less/create less waste in the future.\n
+                      \n3.Determine Your Impact: The Eco Footprint, Greendex and Water Footprintcalculators give you a great way to determine how you are impacting the environment.\n
+                      \n4.Reduce Purchases: In general, think before you buy any product - do you really need it? How did the production of this product impact the environment and what further impacts will there be with the disposal of the product (and associated packaging materials)? When you are thinking about buying something, try the 30-Day Rule -- wait 30 days after the first time you decide you want a product to really make your decision. This will eliminate impulse buying. The free, downloadable Wallet Buddy from The Center for a New American Dream is a great constant reminder to make sustainable purchases (including avoiding unessentials).\n
+                      \n5.Observe an Eco-Sabbath: For one day, afternoon or hour a week, don't buy anything, don't use machines, don't switch on anything electric, don't cook, don't answer your phone and, in general, don't use any resources. (source)\n
+                      \n6.Replace Disposables: Wherever possible, replace disposable products with reusable ones (i.e., razor, food storage, batteries, ink cartridges (buy refill ink), coffee filters, furnace or air conditioner filters, etc.).\n
+                      \n7.Buy Used: Buy used products whenever possible.\n
+                      \n8.Use recycled gift wrap
+"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold|italic"
         android:textColor="@android:color/background_light"
-        android:textSize="25sp"/>
-
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/txt2"
+        android:text="\t                                        GARDEN
+                      \n2.Simplify: Simplify your life as much as possible. Only keep belongings that you use/enjoy on a regular basis. By making the effort to reduce what you own, you will naturally purchase less/create less waste in the future.\n
+                      \n3.Determine Your Impact: The Eco Footprint, Greendex and Water Footprintcalculators give you a great way to determine how you are impacting the environment.\n
+                      \n4.Reduce Purchases: In general, think before you buy any product - do you really need it? How did the production of this product impact the environment and what further impacts will there be with the disposal of the product (and associated packaging materials)? When you are thinking about buying something, try the 30-Day Rule -- wait 30 days after the first time you decide you want a product to really make your decision. This will eliminate impulse buying. The free, downloadable Wallet Buddy from The Center for a New American Dream is a great constant reminder to make sustainable purchases (including avoiding unessentials).\n
+                      \n5.Observe an Eco-Sabbath: For one day, afternoon or hour a week, don't buy anything, don't use machines, don't switch on anything electric, don't cook, don't answer your phone and, in general, don't use any resources. (source)\n
+                      \n6.Replace Disposables: Wherever possible, replace disposable products with reusable ones (i.e., razor, food storage, batteries, ink cartridges (buy refill ink), coffee filters, furnace or air conditioner filters, etc.).\n
+                      \n7.Buy Used: Buy used products whenever possible.\n
+                      \n8.Use recycled gift wrap
+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold|italic"
+        android:textColor="@android:color/background_light"
+        android:textSize="15sp"
+        android:layout_below="@+id/txt1"/>
 
 </RelativeLayout>
+</ScrollView>

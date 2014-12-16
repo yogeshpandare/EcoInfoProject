@@ -9,42 +9,32 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="#0099CC"
+    android:background="#DCEDC8"
     tools:context="com.example.yogesh.ecoinfo.Tips$PlaceholderFragment">
 
     <TextView
         android:id="@+id/txt1"
-        android:text="\t                                   GARDEN
-                      \n2.Simplify: Simplify your life as much as possible. Only keep belongings that you use/enjoy on a regular basis. By making the effort to reduce what you own, you will naturally purchase less/create less waste in the future.\n
-                      \n3.Determine Your Impact: The Eco Footprint, Greendex and Water Footprintcalculators give you a great way to determine how you are impacting the environment.\n
-                      \n4.Reduce Purchases: In general, think before you buy any product - do you really need it? How did the production of this product impact the environment and what further impacts will there be with the disposal of the product (and associated packaging materials)? When you are thinking about buying something, try the 30-Day Rule -- wait 30 days after the first time you decide you want a product to really make your decision. This will eliminate impulse buying. The free, downloadable Wallet Buddy from The Center for a New American Dream is a great constant reminder to make sustainable purchases (including avoiding unessentials).\n
-                      \n5.Observe an Eco-Sabbath: For one day, afternoon or hour a week, don't buy anything, don't use machines, don't switch on anything electric, don't cook, don't answer your phone and, in general, don't use any resources. (source)\n
-                      \n6.Replace Disposables: Wherever possible, replace disposable products with reusable ones (i.e., razor, food storage, batteries, ink cartridges (buy refill ink), coffee filters, furnace or air conditioner filters, etc.).\n
-                      \n7.Buy Used: Buy used products whenever possible.\n
-                      \n8.Use recycled gift wrap
-"
+        android:text="                \t-----HOME----- \n
+\n1. Reduce e-waste. Recycle or donate your cell phones, computers and other electronics.\n
+\n2. Use rechargeable batteries. This way you won't be throwing toxic batteries into the garbage every time they stop working.\n
+\n3. Use durable products. Choose furniture, equipment, and tools that will stand the test of time.\n
+\n4. Reuse products. You can reuse newspaper, boxes, shipping peanuts and bubble wrap to ship packages.\n
+\n5. Take household hazardous waste to collection days or sites.\n
+\n6. Install low-flow devices for toilet, shower, faucets, gardens.\n
+\n7. Use and dispose of home toxics properly. Do not pour toxics down drains or place them in the trash. Call your County Health Department for guidelines on disposal of toxics including paint and solvents, varnishes and refinishers, brake and transmission fluids, gasoline and oil, and fertilizers and pesticides.\n
+\n8. Turn down the heat, wear sweaters.\n
+\n\t            -----OUTSIDE----- \n
+\n1. Bus, Bike, Walk.\n
+\n2. Conserve paper. Don't print out documents unless absolutely necessary. Or use the reverse side of old print outs to save paper.\n
+\n3. Buy products made from recycled material. Today, many bottles, cans, containers and cartons are made from recycled material.\n
+\n4. Recycle automotive products. Take car batteries, antifreeze and motor oil to participating recycling centers.\n
+\n5. Compost yard and food waste.\n
+\n6. Get involved, join a local community group working on streams or sustainability."
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textStyle="bold|italic"
-        android:textColor="@android:color/background_light"
-        android:textSize="15sp"/>
-    <TextView
-        android:id="@+id/txt2"
-        android:text="\t                                        GARDEN
-                      \n2.Simplify: Simplify your life as much as possible. Only keep belongings that you use/enjoy on a regular basis. By making the effort to reduce what you own, you will naturally purchase less/create less waste in the future.\n
-                      \n3.Determine Your Impact: The Eco Footprint, Greendex and Water Footprintcalculators give you a great way to determine how you are impacting the environment.\n
-                      \n4.Reduce Purchases: In general, think before you buy any product - do you really need it? How did the production of this product impact the environment and what further impacts will there be with the disposal of the product (and associated packaging materials)? When you are thinking about buying something, try the 30-Day Rule -- wait 30 days after the first time you decide you want a product to really make your decision. This will eliminate impulse buying. The free, downloadable Wallet Buddy from The Center for a New American Dream is a great constant reminder to make sustainable purchases (including avoiding unessentials).\n
-                      \n5.Observe an Eco-Sabbath: For one day, afternoon or hour a week, don't buy anything, don't use machines, don't switch on anything electric, don't cook, don't answer your phone and, in general, don't use any resources. (source)\n
-                      \n6.Replace Disposables: Wherever possible, replace disposable products with reusable ones (i.e., razor, food storage, batteries, ink cartridges (buy refill ink), coffee filters, furnace or air conditioner filters, etc.).\n
-                      \n7.Buy Used: Buy used products whenever possible.\n
-                      \n8.Use recycled gift wrap
-"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold|italic"
-        android:textColor="@android:color/background_light"
-        android:textSize="15sp"
-        android:layout_below="@+id/txt1"/>
+        android:textStyle="normal"
+
+        android:textSize="18sp"/>
 
 </RelativeLayout>
 </ScrollView>

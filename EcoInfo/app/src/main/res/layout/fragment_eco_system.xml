@@ -10,7 +10,7 @@
         android:paddingRight="16dp"
         android:paddingTop="16dp"
         android:paddingBottom="16dp"
-        android:background="#0099CC"
+        android:background="#DCEDC8"
         tools:context="com.example.yogesh.ecoinfo.EcoSystem$PlaceholderFragment">
 
         <WebView
@@ -19,9 +19,9 @@
             android:layout_height="match_parent"
             />
         <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
-            android:src="@drawable/drop2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ecosystem1"
             android:layout_below="@+id/webView1"/>
 
     </RelativeLayout>

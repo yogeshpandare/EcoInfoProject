@@ -1,3 +1,5 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -6,49 +8,124 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="#0099CC"
+    android:background="#DCEDC8"
     tools:context="com.example.yogesh.ecoinfo.NGOs$PlaceholderFragment">
-
     <TextView
-    android:id="@+id/wwf"
-    android:text="WWF"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:textColor="@android:color/background_light"
-    android:textSize="30sp"/>
-    <TextView
-        android:id="@+id/greenpeace"
-        android:text="GreenPeace"
+        android:id="@+id/title1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/background_light"
-        android:textSize="30sp"
+        android:text="Global NGOs"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+    android:id="@+id/wwf"
+    android:text="\nWWF - Worldwide\n"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="normal"
+    android:textSize="18sp"
+    android:layout_below="@+id/title1"
+   />
+    <TextView
+        android:id="@+id/greenpeace"
+        android:text="GreenPeace - Worldwide\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="18sp"
         android:layout_below="@+id/wwf"/>
     <TextView
         android:id="@+id/chintan"
-        android:text="Chintan Group"
+        android:text="Chintan Group - India\n"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/background_light"
-        android:textSize="30sp"
+        android:textStyle="normal"
+        android:textSize="18sp"
         android:layout_below="@+id/greenpeace"/>
     <TextView
         android:id="@+id/ies"
-        android:text="Indian Environmental Society"
+        android:text="Indian Environmental Society - India\n"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/background_light"
-        android:textSize="30sp"
+        android:textStyle="normal"
+        android:textSize="18sp"
         android:layout_below="@+id/chintan"/>
     <TextView
         android:id="@+id/ecofriends"
-        android:text="EcoFriends"
+        android:text="EcoFriends - India\n"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/background_light"
-        android:textSize="30sp"
+        android:textStyle="normal"
+        android:textSize="18sp"
         android:layout_below="@+id/ies"/>
-
-
+    <TextView
+        android:id="@+id/gri"
+        android:text="Global Reporting Initiative – Netherlands\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_below="@+id/ecofriends"/>
+    <TextView
+        android:id="@+id/ceres"
+        android:text="Ceres - USA\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_below="@+id/gri"/>
+    <TextView
+        android:id="@+id/rainforest"
+        android:text="Rainforest Alliance - USA\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_below="@+id/ceres"/>
+    <TextView
+        android:id="@+id/sierra"
+        android:text="Sierra Club - Worldwide\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_below="@+id/rainforest"/>
+    <TextView
+        android:id="@+id/nwf"
+        android:text="National Wildlife Federation - USA\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_below="@+id/sierra"/>
+    <TextView
+        android:id="@+id/onepercent"
+        android:text="One Percent of The Planet - Worldwide\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_below="@+id/nwf"/>
+    <TextView
+        android:id="@+id/awf"
+        android:text="African Wildlife Foundation - Africa\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_below="@+id/onepercent"/>
+    <TextView
+        android:id="@+id/ci"
+        android:text="Conservation India - India\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_below="@+id/awf"/>
 
 </RelativeLayout>
+</ScrollView>

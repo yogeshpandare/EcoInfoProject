@@ -97,6 +97,64 @@ public class NGOs extends Activity {
                     startActivity(webintent);
                 }
             });
+
+            final TextView gri = (TextView) rootView.findViewById(R.id.gri);
+            gri.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    final Intent webintent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.globalreporting.org/Pages/default.aspx"));
+                    startActivity(webintent);
+                }
+            });
+            final TextView ceres = (TextView) rootView.findViewById(R.id.ceres);
+            ceres.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    final Intent webintent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ceres.org/"));
+                    startActivity(webintent);
+                }
+            });
+            final TextView rainforest = (TextView) rootView.findViewById(R.id.rainforest);
+            rainforest.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    final Intent webintent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.rainforest-alliance.org/"));
+                    startActivity(webintent);
+                }
+            });
+            final TextView sierra = (TextView) rootView.findViewById(R.id.sierra);
+            sierra.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    final Intent webintent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.sierraclub.org/sierra"));
+                    startActivity(webintent);
+                }
+            });
+
+            final TextView nwf = (TextView) rootView.findViewById(R.id.nwf);
+            nwf.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    final Intent webintent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.nwf.org/"));
+                    startActivity(webintent);
+                }
+            });
+            final TextView onepercent = (TextView) rootView.findViewById(R.id.onepercent);
+            onepercent.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    final Intent webintent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://onepercentfortheplanet.org/"));
+                    startActivity(webintent);
+                }
+            });
+            final TextView awf = (TextView) rootView.findViewById(R.id.awf);
+            awf.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    final Intent webintent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.awf.org/"));
+                    startActivity(webintent);
+                }
+            });
+            final TextView ci = (TextView) rootView.findViewById(R.id.ci);
+            ci.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    final Intent webintent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.conservationindia.org/"));
+                    startActivity(webintent);
+                }
+            });
             return rootView;
         }
     }

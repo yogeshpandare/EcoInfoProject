@@ -26,6 +26,7 @@ import org.w3c.dom.Text;
 
 public class Tips extends Activity {
     TextView tipsview;
+    //View view1;
     // public ShareActionProvider mShareActionProvider;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,6 +61,7 @@ public class Tips extends Activity {
 
         //
         tipsview = (TextView) findViewById(R.id.txt1);
+        //view1 = findViewById(R.id.view1);
         getMenuInflater().inflate(R.menu.tips, menu);
         MenuItem item = menu.findItem(R.id.menu_item_share);
 
@@ -72,6 +74,7 @@ public class Tips extends Activity {
         //myIntent.putExtra("Share the nature tips", tipsview.getText().toString());
         //myIntent.putExtra(Intent.EXTRA_TEXT, TextView.getDefaultSize(1,1));
         myIntent.putExtra(Intent.EXTRA_TEXT, tipsview.getText().toString());
+        //myIntent.putExtra(Intent.EXTRA_STREAM, view1.getParent().toString());
        //myIntent.putExtra(Intent.EXTRA_TEXT, TextView.getText().toString());
        //myIntent.putExtra(Intent.EXTRA_STREAM, TextView.getText());
         myShareActionProvider.setShareIntent(myIntent);

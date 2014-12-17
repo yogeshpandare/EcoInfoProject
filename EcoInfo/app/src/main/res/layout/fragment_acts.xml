@@ -1,3 +1,5 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,10 +12,35 @@
     tools:context="com.example.yogesh.ecoinfo.Acts$PlaceholderFragment">
 
     <TextView
-        android:text="Act1\nAct2"
+        android:id="@+id/title1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="40sp"
-        android:textStyle="normal"/>
+        android:text="Regulations and Acts"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/act1"
+        android:text="\n1)Endangered Species Act (1973) - USA: \nIs designed to protect and recover endangered and threatened species of fish, wildlife and plants in the United States and beyond. The law works in part by protecting species habitats.\n\n(2)Clean Air Act (1970) - USA:\nSets goals and standards for the quality and purity of air in the United States. By law, it is periodically reviewed. A significant set of amendments in 1990 toughened air quality standards and placed new emphasis on market forces to control air pollution.\n\n(3)Marine Mammal Protection Act (1972) - USA: \nSeeks to protect whales, dolphins, sea lions, seals, manatees and other species of marine mammals, many of which remain threatened or endangered. The law requires wildlife agencies to review any activity -- for example, the use of underwater explosives or high-intensity active sonar -- that has the potential to harass or kill these animals in the wild. The law is our nation's leading instrument for the conservation of these species, and is an international model for such laws.\n\n(4)Environment (Protection) Act, 1986 - India
+•	Comply with the directions issued by the Central Government. The direction may include:
+-	closure, prohibition or regulation of any industry, or
+-	stoppage or regulation of the supply of electricity, water or any other service\n\n(5)The Hazardous Waste (Management And Handling) Rules, 1989, Amendments 2000 - India
+•	Check whether the waste(s) generated covered in Schedule 1 and 2 of the amendment rules, 2000
+•	If covered, apply in the Prescribed Format to obtain an “Authorization” for proper treatment and disposal of hazardous waste(s) and comply with the conditions specified in the authorization
+•	Take steps, wherever feasible for reduction, recovery and recycling of wastes\n\n
+(6)Federal Law 6.938/1981 - Brazil\n sets the National Environmental Policy and is enhanced by the Federal Constitution of 1988. The National Environmental Policy had expressly established the Environmental Licensing Process and the Civil Liability for environmental damages\n\n(7)Federal Law 12,651/2012 - Brazil\n also known as the New Brazilian Forestry Code, regulates the protection of Legal Forestry Reserves and the Permanent Protected Areas, especially playing a key role in rural areas.\n\n(8)IBAMA (Brazilian Institute for Environment and Renewable Resources)\n which is in charge of applying environmental statutes and regulations, executing the environmental permitting of activities located in strategic areas for the country and those with regional impacts, besides nuclear related activities\n
+"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_below="@+id/title1"
+        />
+
 
 </RelativeLayout>
+</ScrollView>

@@ -1,3 +1,6 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -20,5 +23,82 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         />
-
+<ImageView
+    android:id="@+id/productimage1"
+    android:layout_width="400dp"
+    android:layout_height="200dp"
+    android:src="@drawable/product1"
+    android:layout_below="@+id/title1"/>
+    <TextView
+        android:id="@+id/product1"
+        android:text="\nhttp://www.ecofriendlyonline.com/\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_below="@+id/productimage1"
+        />
+    <TextView
+        android:id="@+id/product2"
+        android:text="http://www.buygreen.com/\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_below="@+id/product1"/>
+    <TextView
+        android:id="@+id/product3"
+        android:text="http://www.ecos.com/\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_below="@+id/product2"/>
+    <TextView
+        android:id="@+id/product4"
+        android:text="http://www.bambeco.com/\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_below="@+id/product3"/>
+    <TextView
+        android:id="@+id/product5"
+        android:text="http://eartheasy.com/\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_below="@+id/product4"/>
+    <TextView
+        android:id="@+id/product6"
+        android:text="http://www.greenhome.com/\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_below="@+id/product5"/>
+    <TextView
+        android:id="@+id/product7"
+        android:text="http://www.theultimategreenstore.com/default.aspx\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_below="@+id/product6"/>
+    <TextView
+        android:id="@+id/product8"
+        android:text="http://www.certisusa.com/\n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:layout_below="@+id/product7"/>
+    <ImageView
+        android:id="@+id/productimage2"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:src="@drawable/product2"
+        android:layout_below="@+id/product8"/>
 </RelativeLayout>
+</ScrollView>

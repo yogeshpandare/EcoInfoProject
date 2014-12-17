@@ -1,6 +1,8 @@
 package com.example.yogesh.ecoinfo;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -11,7 +13,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
-
+import android.widget.TextView;
 
 
 public class Products extends Activity {
@@ -59,6 +61,63 @@ public class Products extends Activity {
         public View onCreateView(LayoutInflater inflater, ViewGroup container,
                 Bundle savedInstanceState) {
             View rootView = inflater.inflate(R.layout.fragment_products, container, false);
+            final TextView product1 = (TextView) rootView.findViewById(R.id.product1);
+            product1.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    final Intent webintent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ecofriendlyonline.com/"));
+                    startActivity(webintent);
+                }
+            });
+            final TextView product2 = (TextView) rootView.findViewById(R.id.product2);
+            product2.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    final Intent webintent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.buygreen.com/"));
+                    startActivity(webintent);
+                }
+            });
+            final TextView product3 = (TextView) rootView.findViewById(R.id.product3);
+            product3.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    final Intent webintent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.ecos.com/"));
+                    startActivity(webintent);
+                }
+            });
+            final TextView product4 = (TextView) rootView.findViewById(R.id.product4);
+            product4.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    final Intent webintent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.bambeco.com/"));
+                    startActivity(webintent);
+                }
+            });
+            final TextView product5 = (TextView) rootView.findViewById(R.id.product5);
+            product5.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    final Intent webintent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://eartheasy.com/"));
+                    startActivity(webintent);
+                }
+            });
+            final TextView product6 = (TextView) rootView.findViewById(R.id.product6);
+            product6.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    final Intent webintent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.greenhome.com/"));
+                    startActivity(webintent);
+                }
+            });
+            final TextView product7 = (TextView) rootView.findViewById(R.id.product7);
+            product7.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    final Intent webintent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.theultimategreenstore.com/default.aspx"));
+                    startActivity(webintent);
+                }
+            });
+            final TextView product8 = (TextView) rootView.findViewById(R.id.product8);
+            product8.setOnClickListener(new View.OnClickListener() {
+                public void onClick(View v) {
+                    final Intent webintent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://www.certisusa.com/"));
+                    startActivity(webintent);
+                }
+            });
+
             return rootView;
         }
     }

@@ -22,110 +22,102 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         />
+    <ImageView
+        android:id="@+id/articleimage1"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:src="@drawable/articleimage2"
+        android:layout_below="@+id/title1"
+        />
     <TextView
-        android:id="@+id/wwf"
+        android:id="@+id/forumfutureblog"
         android:text="\nhttps://www.forumforthefuture.org/blogs\n"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="normal"
         android:textSize="18sp"
-        android:layout_below="@+id/title1"
+        android:layout_below="@+id/articleimage1"
         />
     <TextView
-        android:id="@+id/greenpeace"
+        android:id="@+id/wriblog"
         android:text="http://www.wri.org/blog\n"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="normal"
         android:textSize="18sp"
-        android:layout_below="@+id/wwf"/>
+        android:layout_below="@+id/forumfutureblog"/>
     <TextView
-        android:id="@+id/chintan"
+        android:id="@+id/edfblog"
         android:text="http://www.edf.org/blog\n"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="normal"
         android:textSize="18sp"
-        android:layout_below="@+id/greenpeace"/>
+        android:layout_below="@+id/wriblog"/>
     <TextView
-        android:id="@+id/ies"
+        android:id="@+id/rainforestblog"
         android:text="http://www.rainforest-alliance.org/newsroom/press-releases/frog-blog-relaunch\n"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="normal"
         android:textSize="18sp"
-        android:layout_below="@+id/chintan"/>
+        android:layout_below="@+id/edfblog"/>
     <TextView
-        android:id="@+id/ecofriends"
+        android:id="@+id/ceresblog"
         android:text="http://www.ceres.org/bicep/press/the-bicep-blog\n"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="normal"
         android:textSize="18sp"
-        android:layout_below="@+id/ies"/>
+        android:layout_below="@+id/rainforestblog"/>
     <TextView
-        android:id="@+id/gri"
+        android:id="@+id/sierrablog"
         android:text="http://www.sierraclub.org/blogs\n"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="normal"
         android:textSize="18sp"
-        android:layout_below="@+id/ecofriends"/>
+        android:layout_below="@+id/ceresblog"/>
     <TextView
-        android:id="@+id/ceres"
+        android:id="@+id/greenpeaceblog"
         android:text="http://greenpeaceblogs.org/\n"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="normal"
         android:textSize="18sp"
-        android:layout_below="@+id/gri"/>
+        android:layout_below="@+id/sierrablog"/>
     <TextView
-        android:id="@+id/rainforest"
+        android:id="@+id/onepercentblog"
         android:text="http://onepercentfortheplanet.org/blog/\n"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="normal"
         android:textSize="18sp"
-        android:layout_below="@+id/ceres"/>
+        android:layout_below="@+id/greenpeaceblog"/>
     <TextView
-        android:id="@+id/sierra"
-        android:text="Sierra Club - Worldwide\n"
+        android:id="@+id/article1"
+        android:text="http://www.mindbodygreen.com/0-16168/i-havent-made-any-trash-in-2-years-heres-what-my-life-is-like.html\n"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="normal"
         android:textSize="18sp"
-        android:layout_below="@+id/rainforest"/>
+        android:layout_below="@+id/onepercentblog"/>
     <TextView
-        android:id="@+id/nwf"
-        android:text="National Wildlife Federation - USA\n"
+        android:id="@+id/article2"
+        android:text="http://news.nationalgeographic.com/news/2014/08/140825-bird-environment-chemical-contaminant-climate-change-science-winged-warning/\n"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="normal"
         android:textSize="18sp"
-        android:layout_below="@+id/sierra"/>
+        android:layout_below="@+id/article1"/>
     <TextView
-        android:id="@+id/onepercent"
-        android:text="One Percent of The Planet - Worldwide\n"
+        android:id="@+id/article3"
+        android:text="http://www.mindbodygreen.com/0-16402/the-more-educated-we-are-about-climate-change-the-better-well-adapt.html\n"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="normal"
         android:textSize="18sp"
-        android:layout_below="@+id/nwf"/>
-    <TextView
-        android:id="@+id/awf"
-        android:text="African Wildlife Foundation - Africa\n"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="normal"
-        android:textSize="18sp"
-        android:layout_below="@+id/onepercent"/>
-    <TextView
-        android:id="@+id/ci"
-        android:text="Conservation India - India\n"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="normal"
-        android:textSize="18sp"
-        android:layout_below="@+id/awf"/>
+        android:layout_below="@+id/article2"/>
+
 </RelativeLayout>
 </ScrollView>
